@@ -84,6 +84,18 @@ lucidity-mcp --log-file lucidity.log
 
 3. The AI can now invoke the `analyze_changes` tool to get code quality feedback!
 
+
+## Example MCP Configuration (Roo Code / Cline)
+```
+},
+"lucidity-mcp": {
+  "type": "sse",
+  "url": "http://localhost:6969/sse",
+  "tools": [
+    "analyze_changes"
+  ]
+}
+```
 ## 🧠 Analysis Dimensions
 
 Lucidity analyzes code across 10 critical quality dimensions:
